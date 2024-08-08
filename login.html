@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./CSS/login.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./IMAGES/Logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+  <header>
+    <input type ="checkbox" name ="" id ="chk1">
+    <img class="logo-image" src="./IMAGES/BlackandWhiteSimpleMarketLogo.webp" width="80px" height="80px">
+    <section class="logo"><h1>Zuper Mart</h1></section>
+        <section class="search-box">
+            <form>
+                <input type ="text" name ="search" id ="srch" placeholder="Search">
+                <button type ="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </section>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li class="dropdown">
+                <a href="#">Products<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="./dairy.html">Dairy</a></li>
+                    <li><a href="./veg.html">Vegitables</a></li>
+                    <li><a href="./cosmetics.html">Cosmetics</a></li>
+                    <li><a href="./Fruits.html">Fruits</a></li>
+                    <li><a href="./Seafood.html">SeaFood </a></li>
+                    <li><a href="./Ingredients.html">Ingredients</a></li>
+                </ul>
+            </li>
+             <li><a href="./login.html">Login</a></li>
+            <li><a href="./order.html">Order</a></li>
+
+            <li>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                  
+            </li>
+        </ul>
+        <section class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </section>
+</header>
+<br><br><br><br><br>
+  <!----------------------------------loyality-form----------------------------------->
+
+    <section class="container">
+      <h1>Registration Form</h1>
+      <form action="#" class="form">
+        <section class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </section>
+
+        <section class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" required />
+        </section>
+
+        <section class="column">
+          <section class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required />
+          </section>
+          <section class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </section>
+        </section>
+        <section class="gender-box">
+          <h3>Gender</h3>
+          <section class="gender-option">
+            <section class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </section>
+            <section class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </section>
+            <section class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">prefer not to say</label>
+            </section>
+          </section>
+        </section>
+        <section class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address" required />
+          <input type="text" placeholder="Enter street address line 2" required />
+          <section class="column">
+            <section class="select-box">
+              <select>
+                <option hidden>Loyality scheme</option>
+                <option>Bronze</option>
+                <option>Silver</option>
+                <option>Gold</option>
+              </select>
+            </section>
+            <input type="text" placeholder="Enter your city" required />
+          </section>
+          <section class="column">
+            <input type="text" placeholder="Enter your region" required />
+            <input type="number" placeholder="Enter postal code" required />
+          </section>
+        </section>
+        <button>Submit</button>
+      </form>
+    </section>
+
+    <section class="scheme_details">
+        <ol>
+          <li>Bronze</li>
+            <ul>
+              <li>Earn points for purchases</li>
+              <li>Redeem points for discounts on future purchases.</li>
+            </ul>
+          <li>Silver</li>
+            <ul>
+              <li>Higher point multipliers for purchases.</li>
+              <li>Exclusive discounts on select products.</li>
+            </ul>
+          <li>Gold</li>
+            <ul>
+              <li>Highest point multipliers for purchases.</li>
+              <li>Significant discounts and free products for redeeming points.</li>
+            </ul>
+        </ol>
+    </section>
+
+    <footer>
+      <section class="footer-content">
+          <h3>ZuperMart</h3>
+          <p>"At Zupermart, we're dedicated to bringing you the freshest produce and highest quality products to elevate your culinary experience. With a commitment to excellence and a passion for good food, we strive to make every meal a delight. Thank you for choosing Zupermart as your trusted grocery store."</p>
+          <ul class="socials">
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+      </section>
+      <section class="footer-bottom">
+          <p>ZuperMart-Good food is the foundation of genuine happiness."</p>
+      </section>
+    </footer>
+
+<script>
+  function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+  }
+</script>
+
+  </body>
+</html>

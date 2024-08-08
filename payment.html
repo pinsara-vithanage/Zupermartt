@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./IMAGES/Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./CSS/payment.css">
+
+    <title>Zuper Mart</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="chk1">
+        <img class="logo-image" src="./IMAGES/BlackandWhiteSimpleMarketLogo.webp" width="80" height="80" alt="Zuper Mart Logo">
+        <section class="logo">
+            <h1>Zuper Mart</h1>
+        </section>
+        <section class="search-box">
+            <form>
+                <input type="text" name="search" id="srch" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </section>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li class="dropdown">
+                <a href="#">Products<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./dairy.html">Dairy</a></li>
+                    <li><a href="./veg.html">Vegetables</a></li>
+                    <li><a href="./cosmetics.html">Cosmetics</a></li>
+                    <li><a href="./Fruits.html">Fruits</a></li>
+                    <li><a href="./Seafood.html">Seafood</a></li>
+                    <li><a href="./Ingredients.html">Ingredients</a></li>
+                </ul>
+            </li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./order.html">Order</a></li>
+            <li>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+        </ul>
+        <section class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </section>
+    </header>
+    <br><br><br><br>
+
+    <!-- Payment Form Section -->
+    <section class="order-payment">
+        <section class="container">
+            <form id="paymentForm">
+                <section class="row">
+                    <section class="col">
+                        <h3 class="title">Billing Address</h3>
+                        <section class="inputBox">
+                            <span>Full Name:</span>
+                            <input type="text" id="fullName" placeholder="Pinsara Vithanage" required>
+                        </section>
+                        <section class="inputBox">
+                            <span>Email:</span>
+                            <input type="email" id="email" placeholder="example@gmail.com" required>
+                        </section>
+                        <section class="inputBox">
+                            <span>Address:</span>
+                            <input type="text" id="address" placeholder="Room - Street - Locality" required>
+                        </section>
+                        <section class="inputBox">
+                            <span>City:</span>
+                            <input type="text" id="city" placeholder="Kandy" required>
+                        </section>
+                        <section class="flex">
+                            <section class="inputBox">
+                                <span>State:</span>
+                                <input type="text" id="state" placeholder="Colombo" required>
+                            </section>
+                            <section class="inputBox">
+                                <span>Zip Code:</span>
+                                <input type="text" id="zipCode" placeholder="123 456" required>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="col">
+                        <h3 class="title">Payment</h3>
+                        <section class="inputBox">
+                            <span>Cards Accepted:</span>
+                            <img src="./IMAGES/card_img.webp" alt="Accepted Cards">
+                        </section>
+                        <section class="inputBox">
+                            <span>Name on Card:</span>
+                            <input type="text" id="nameOnCard" placeholder="Mr. Pinsara" required>
+                        </section>
+                        <section class="inputBox">
+                            <span>Credit Card Number:</span>
+                            <input type="text" id="cardNumber" placeholder="1111-2222-3333-4444" required>
+                        </section>
+                        <section class="inputBox">
+                            <span>Exp Month:</span>
+                            <input type="text" id="expMonth" placeholder="January" required>
+                        </section>
+                        <section class="flex">
+                            <section class="inputBox">
+                                <span>Exp Year:</span>
+                                <input type="number" id="expYear" placeholder="2022" required>
+                            </section>
+                            <section class="inputBox">
+                                <span>CVV:</span>
+                                <input type="text" id="cvv" placeholder="1234" required>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <input type="submit" value="Proceed to Checkout" class="submit-btn">
+            </form>
+        </section>
+    </section>
+
+    <!-- Order Summary Section -->
+    <section id="order-summary">
+        <h2 class="tabletopic">ORDER  SUMMERY</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Price</td>
+                    <td id="total-price">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Alert Message -->
+    <div id="alert-message" class="alert hidden">
+        <div class="alert-content">
+            <div class="alert-text"></div>
+            <button class="alert-dismiss" onclick="dismissAlert()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <section class="footer-content">
+            <h3>ZuperMart</h3>
+            <p>"At Zupermart, we're dedicated to bringing you the freshest produce and highest quality products to elevate your culinary experience. With a commitment to excellence and a passion for good food, we strive to make every meal a delight. Thank you for choosing Zupermart as your trusted grocery store."</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </section>
+        <section class="footer-bottom">
+            <p>ZuperMart - "Good food is the foundation of genuine happiness."</p>
+        </section>
+    </footer>
+
+    <script src="./js/payment.js"></script>
+</body>
+</html>

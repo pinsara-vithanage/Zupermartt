@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Ordering</title>
+    <link rel="stylesheet" href="./CSS/order.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <input type ="checkbox" name ="checkboxx" id ="chk1">
+        <img class="logo-image" src="./IMAGES/BlackandWhiteSimpleMarketLogo.webp" width="80px" height="80px" alt="logoo">
+        <section class="logo"><h1>Zuper Mart</h1></section>
+            <section class="search-box">
+                <form>
+                    <input type ="text" name ="search" id ="srch" placeholder="Search">
+                    <button type ="submit" aria-label="buttonn"><i class="fa fa-search"></i></button>
+                </form>
+            </section>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About us</a></li>
+                <li class="dropdown">
+                    <a href="#">Products<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="./dairy.html">Dairy</a></li>
+                        <li><a href="./vegitables.html">Vegitables</a></li>
+                        <li><a href="./cosmatics.html">Cosmetics</a></li>
+                        <li><a href="./Fruits.html">Fruits</a></li>
+                        <li><a href="./Seafood.html">SeaFood </a></li>
+                        <li><a href="./Ingredients.html">Ingredients</a></li>
+                    </ul>
+                </li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./order.html">Order</a></li>
+
+                <li>
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                      
+                </li>
+            </ul>
+            <section class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </section>
+    </header>
+    <br><br><br><br><br>
+    <main>
+        <section class="slider">
+            <figure>
+                <img src="./IMAGES/vegetablesbanneroderpage.webp" width="100%" height="450%" alt="banner">
+                <img src="./IMAGES/meatandseafoodbanneroderpage.webp" width="100%" height="450%" alt="banner">
+                <img src="./IMAGES/foodingredientsbanneroderpage.webp" width="100%" height="450%" alt="banner">
+                <img src="./IMAGES/foodingredientsbanneroderpage.webp" width="100%" height="450%" alt="banner">
+            </figure>
+        </section>
+        <br><br>
+            <!-------------------------------------------fruits-section-------------------------------------------------------------->
+        <section class="category" id="fruits">
+            <h2>Fruits</h2>
+            <section class="product-grid">
+                <section class="content">
+                    <img src="./IMAGES/pomegranate.webp" alt="Pomegranate">
+                    <p>Pomegranate</p>
+                    <p>Rs 900.0</p>
+                    <label for="pomegranate-amount">Amount(kgs)</label>
+                    <input type="number" id="pomegranate-amount" data-name="Pomegranate" data-price="900">
+                    <button class="add-to-cart" data-name="Pomegranate" data-price="900">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/papaya.webp" alt="Papaya">
+                    <p>Papaya</p>
+                    <p>Rs 300.0</p>
+                    <label for="papaya-amount">Amount(kgs)</label>
+                    <input type="number" id="papaya-amount" data-name="Papaya" data-price="300">
+                    <button class="add-to-cart" data-name="Papaya" data-price="300">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/grapes.webp" alt="Grapes">
+                    <p>Grapes</p>
+                    <p>Rs 760.0</p>
+                    <label for="grapes-amount">Amount(kgs)</label>
+                    <input type="number" id="grapes-amount" data-name="Grapes" data-price="760">
+                    <button class="add-to-cart" data-name="Grapes" data-price="760">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/Dragonfruit.webp" alt="Dragonfruit">
+                    <p>Dragon-fruit</p>
+                    <p>Rs 800.0</p>
+                    <label for="Dragonfruit-amount">Amount(kgs)</label>
+                    <input type="number" id="Dragonfruit-amount" data-name="Dragonfruit" data-price="800">
+                    <button class="add-to-cart" data-name="Dragon-fruit" data-price="800">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="IMAGES/guava.webp" alt="Guava">
+                    <p>Guava</p>
+                    <p>Rs 500.0</p>
+                    <label for="Guava-amount">Amount(kgs)</label>
+                    <input type="number" id="Guava-amount" data-name="Guava" data-price="500">
+                    <button class="add-to-cart" data-name="Guava" data-price="500">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/banana.webp" alt="Banana">
+                    <p>Banana</p>
+                    <p>Rs 400.0</p>
+                    <label for="Banana-amount">Amount(kgs)</label>
+                    <input type="number" id="Banana-amount" data-name="Banana" data-price="400">
+                    <button class="add-to-cart" data-name="Banana" data-price="400">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/avacado.webp" alt="Avacado">
+                    <p>Avacado</p>
+                    <p>Rs 250.0</p>
+                    <label for="Avacado-amount">Amount(kgs)</label>
+                    <input type="number" id="Avacado-amount" data-name="Avacado" data-price="250">
+                    <button class="add-to-cart" data-name="Avacado" data-price="250">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/apple.webp" alt="Apple">
+                    <p>Apple</p>
+                    <p>Rs 425.0</p>
+                    <label for="Apple-amount">Amount(kgs)</label>
+                    <input type="number" id="Apple-amount" data-name="Apple" data-price="425">
+                    <button class="add-to-cart" data-name="Apple" data-price="425">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+<!---------------------------------------------------------- Vegetable section----------------------------------------------------------------->  
+        <section class="category" id="vegetables">
+            <h2>Vegetables</h2>
+            <section class="product-grid">
+                <section class="content">
+                    <img src="./IMAGES/carrotq.webp" alt="Carrot">
+                    <p>Carrot</p>
+                    <p>Rs 1400.0</p>
+                    <label for="Carrot-amount">Amount(kgs)</label>
+                    <input type="number" id="Carrot-amount" data-name="Carrot" data-price="1400">
+                    <button class="add-to-cart" data-name="Carrot" data-price="1400">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/brinjals.q.webp" alt="brinjals">
+                    <p>Brinjals</p>
+                    <p>Rs 325.0</p>
+                    <label for="Brinjals-amount">Amount(kgs)</label>
+                    <input type="number" id="Brinjals-amount" data-name="Brinjals" data-price="325">
+                    <button class="add-to-cart" data-name="Brinjals" data-price="325">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/tomatoQ.webp" alt="Tomatto">
+                    <p>Tomatto</p>
+                    <p>Rs 625.0</p>
+                    <label for="Tomatto-amount">Amount(kgs)</label>
+                    <input type="number" id="Tomatto-amount" data-name="Tomatto" data-price="625">
+                    <button class="add-to-cart" data-name="Tomatto" data-price="625">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/lettuce.webp" alt="Lettuce">
+                    <p>Lettuce</p>
+                    <p>Rs 950.0</p>
+                    <label for="Lettuce-amount">Amount(kgs)</label>
+                    <input type="number" id="Lettuce-amount" data-name="Lettuce" data-price="950">
+                    <button class="add-to-cart" data-name="Lettuce" data-price="950">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/greenbeansQ.webp" alt="Green-beens">
+                    <p>Green-beens</p>
+                    <p>Rs 360.0</p>
+                    <label for="Green-beens-amount">Amount(kgs)</label>
+                    <input type="number" id="Green-beens-amount" data-name="Green-beens" data-price="360">
+                    <button class="add-to-cart" data-name="Green-beens" data-price="360">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/beet.webp" alt="Beet">
+                    <p>Beet</p>
+                    <p>Rs 375.0</p>
+                    <label for="Beet-amount">Amount(kgs)</label>
+                    <input type="number" id="Beet-amount" data-name="Beet" data-price="375">
+                    <button class="add-to-cart" data-name="Beet" data-price="375">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/snake gourd Q.webp" alt="snake-gourd">
+                    <p>Snake-gourd</p>
+                    <p>Rs 460.0</p>
+                    <label for="Snake-gourd-amount">Amount(kgs)</label>
+                    <input type="number" id="Snake-gourd-amount" data-name="Snake-gourd" data-price="460">
+                    <button class="add-to-cart" data-name="Snake-gourd" data-price="460">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/cabbage.webp" alt="Cabbage">
+                    <p>Cabbage</p>
+                    <p>Rs 575.0</p>
+                    <label for="Cabbage-amount">Amount(kgs)</label>
+                    <input type="number" id="Cabbage-amount" data-name="Cabbage" data-price="575">
+                    <button class="add-to-cart" data-name="Cabbage" data-price="575">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+         <!-----------------------------------------------------Dairy-section------------------------------------------------------------------->
+        <section class="category" id="dairy">
+            <h2>Dairy Produce</h2>
+            <section class="product-grid">
+                <section class="content">
+                    <img src="./IMAGES/yourghurt.webp" alt="yourgurt">
+                    <p>Yourgurt</p>
+                    <p>Rs 70.0</p>
+                    <label for="Yourgurt-amount">Amount(kgs)</label>
+                    <input type="number" id="Yourgurt-amount" data-name="Yourgurt" data-price="70">
+                    <button class="add-to-cart" data-name="Yourgurt" data-price="70">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/anchor cheese.webp" alt="cheese">
+                    <p>Cheese</p>
+                    <p>Rs 665.0</p>
+                    <label for="Cheese-amount">Amount(kgs)</label>
+                    <input type="number" id="Cheese-amount" data-name="Cheese" data-price="665">
+                    <button class="add-to-cart" data-name="Cheese" data-price="665">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/anchor butter.webp" alt="Butter">
+                    <p>Butter</p>
+                    <p>Rs 750.0</p>
+                    <label for="Butter-amount">Amount(kgs)</label>
+                    <input type="number" id="Butter-amount" data-name="Butter" data-price="750">
+                    <button class="add-to-cart" data-name="Butter" data-price="750">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/fresh milk ambewela.webp" alt="Fresh-milk">
+                    <p>Fresh-milk</p>
+                    <p>Rs 935.0</p>
+                    <label for="Fresh-milk-amount">Amount(kgs)</label>
+                    <input type="number" id="Fresh-milk-amount" data-name="Fresh-milk" data-price="935">
+                    <button class="add-to-cart" data-name="Fresh-milk" data-price="935">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/yourgurt drink anchor.webp" alt="Yourghurt-drink">
+                    <p>yourghurt-drink</p>
+                    <p>Rs 150.0</p>
+                    <label for="Yourghurt-drink-amount">Amount(kgs)</label>
+                    <input type="number" id="Yourghurt-drink-amount" data-name="Yourghurt-drink" data-price="150">
+                    <button class="add-to-cart" data-name="Yourghurt-drink" data-price="150">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/curd richlife.webp" alt="Curd">
+                    <p>Curd</p>
+                    <p>Rs 590.0</p>
+                    <label for="Curd-amount">Amount(kgs)</label>
+                    <input type="number" id="Curd-amount" data-name="Curd" data-price="590">
+                    <button class="add-to-cart" data-name="Curd" data-price="590">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/anchor milkpowder.webp" alt="milkpowder">
+                    <p>Milk-powder</p>
+                    <p>Rs 1050.0</p>
+                    <label for="Milkpowder-amount">Amount(kgs)</label>
+                    <input type="number" id="Milkpowder-amount" data-name="Milkpowder" data-price="1050">
+                    <button class="add-to-cart" data-name="Milkpowder" data-price="1050">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/ice cream.webp" alt="ice-cream">
+                    <p>Ice-cream</p>
+                    <p>Rs 775.0</p>
+                    <label for="Ice-cream-amount">Amount(kgs)</label>
+                    <input type="number" id="Ice-cream-amount" data-name="Ice-cream" data-price="775">
+                    <button class="add-to-cart" data-name="Ice-cream" data-price="775">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+         <!-------------------------------------------------Baking and cooking ingredients------------------------------------------------------->
+        <section class="category" id="baking">
+            <h2>Baking and Cooking Ingredients</h2>
+            <section class="product-grid">
+                <section class="content">
+                    <img src="./IMAGES/icing-suger.webp" alt="icing-suger">
+                    <p>Icing-suger</p>
+                    <p>Rs 565.0</p>
+                    <label for="Icing-suger-amount">Amount(kgs)</label>
+                    <input type="number" id="Icing-suger-amount" data-name="Icing-suger" data-price="565">
+                    <button class="add-to-cart" data-name="Icing-suger" data-price="565">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/bakingpowder.webp" alt="Baking-powder">
+                    <p>Baking-powder</p>
+                    <p>Rs 275.0</p>
+                    <label for="Bakingpowder-amount">Amount(kgs)</label>
+                    <input type="number" id="Bakingpowder-amount" data-name="Bakingpowder" data-price="275">
+                    <button class="add-to-cart" data-name="Bakingpowder" data-price="275">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/wheatflour.webp" alt="wheatflour">
+                    <p>Wheat-flour</p>
+                    <p>Rs 400.0</p>
+                    <label for="wheatflour-amount">Amount(kgs)</label>
+                    <input type="number" id="Wheatflour-amount" data-name="Wheatflour" data-price="400">
+                    <button class="add-to-cart" data-name="Wheatflour" data-price="400">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/ginger.webp" alt="Ginger">
+                    <p>Ginger</p>
+                    <p>Rs 360.0</p>
+                    <label for="Ginger-amount">Amount(kgs)</label>
+                    <input type="number" id="Ginger-amount" data-name="Ginger" data-price="360">
+                    <button class="add-to-cart" data-name="Ginger" data-price="360">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/cardamom.webp" alt="Cardamom">
+                    <p>Cardamom</p>
+                    <p>Rs 700.0</p>
+                    <label for="Cardamom-amount">Amount(kgs)</label>
+                    <input type="number" id="Cardamom-amount" data-name="Cardamom" data-price="700">
+                    <button class="add-to-cart" data-name="Cardamom" data-price="700">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/pepper.webp" alt="Pepper">
+                    <p>Pepper</p>
+                    <p>Rs 300.0</p>
+                    <label for="Pepper-amount">Amount(kgs)</label>
+                    <input type="number" id="Pepper-amount" data-name="Pepper" data-price="300">
+                    <button class="add-to-cart" data-name="Pepper" data-price="300">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/chillipowder.webp" alt="chillipowder">
+                    <p>Chilli-powder</p>
+                    <p>Rs 375.0</p>
+                    <label for="Chillipowder-amount">Amount(kgs)</label>
+                    <input type="number" id="Chilli-powder-amount" data-name="Chilli-powder" data-price="375">
+                    <button class="add-to-cart" data-name="Chilli-powder" data-price="375">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/turmeric-powder.webp" alt="turmeric">
+                    <p>Turmeric</p>
+                    <p>Rs 585.0</p>
+                    <label for="Turmeric-amount">Amount(kgs)</label>
+                    <input type="number" id="Turmeric-amount" data-name="Turmeric" data-price="585">
+                    <button class="add-to-cart" data-name="Turmeric" data-price="585">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+         <!-- ----------------------------------------------meat and seafood section----------------------------------------------------------->
+        <section class="category" id="meat">
+            <h2>Meat and Seafood</h2>
+            <section class="product-grid">
+                <section class="content">
+                    <img src="./IMAGES/beef.webp" alt="beef">
+                    <p>Beef</p>
+                    <p>Rs 1500.0</p>
+                    <label for="Beef-amount">Amount(kgs)</label>
+                    <input type="number" id="Beef-amount" data-name="Beef" data-price="1500">
+                    <button class="add-to-cart" data-name="Beef" data-price="1500">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/chikenlegs.webp" alt="chiken-legs">
+                    <p>Chiken-legs</p>
+                    <p>Rs 300.0</p>
+                    <label for="Chikenlegs-amount">Amount(kgs)</label>
+                    <input type="number" id="Chikenlegs-amount" data-name="Chikenlegs" data-price="300">
+                    <button class="add-to-cart" data-name="Chikenlegs" data-price="300">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/dryfish.webp" alt="dryfish">
+                    <p>Dry-Fish</p>
+                    <p>Rs 360.0</p>
+                    <label for="Dryfish-amount">Amount(kgs)</label>
+                    <input type="number" id="Dryfish-amount" data-name="Dry-fish" data-price="360">
+                    <button class="add-to-cart" data-name="Dry-fish" data-price="360">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/fish.webp" alt="Fish">
+                    <p>Fish</p>
+                    <p>Rs 340.0</p>
+                    <label for="Fish-amount">Amount(kgs)</label>
+                    <input type="number" id="Fish-amount" data-name="Fish" data-price="340">
+                    <button class="add-to-cart" data-name="Fish" data-price="340">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/pork.webp" alt="Pork">
+                    <p>Pork</p>
+                    <p>Rs 1800.0</p>
+                    <label for="Pork-amount">Amount(kgs)</label>
+                    <input type="number" id="Pork-amount" data-name="Pork" data-price="1800">
+                    <button class="add-to-cart" data-name="Pork" data-price="1800">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/prawns.webp" alt="Prawns">
+                    <p>Prawns</p>
+                    <p>Rs 1300.0</p>
+                    <label for="prawns-amount">Amount(kgs)</label>
+                    <input type="number" id="prawns-amount" data-name="Prawns" data-price="1300">
+                    <button class="add-to-cart" data-name="Prawns" data-price="1300">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/cannedfish.webp" alt="cannedfish">
+                    <p>Canned-fish</p>
+                    <p>Rs 850.0</p>
+                    <label for="Cannedfish-amount">Amount(kgs)</label>
+                    <input type="number" id="Canned-fish-amount" data-name="Canned-fish" data-price="850">
+                    <button class="add-to-cart" data-name="Canned-fish" data-price="850">Add to Cart</button>
+                </section>
+                <section class="content">
+                    <img src="./IMAGES/eggs.webp" alt="Eggs">
+                    <p>Eggs</p>
+                    <p>Rs 775.0</p>
+                    <label for="Eggs-amount">Amount(kgs)</label>
+                    <input type="number" id="Eggs-amount" data-name="Eggs" data-price="775">
+                    <button class="add-to-cart" data-name="Eggs" data-price="775">Add to Cart</button>
+                </section>
+            </section>
+        </section>
+
+        <div id="custom-alert" class="modal">
+            <div class="modal-content">
+                <span id="close-alert" class="close">&times;</span>
+                <h2 id="alert-title"></h2>
+                <p id="alert-message"></p>
+                <button id="alert-ok-button">OK</button>
+            </div>
+        </div>
+        
+         <!-------------------------------------------------------Cart-Table--------------------------------------------------------------------->
+        <section id="cart">
+                    <h2>Order Summery</h2>
+                    <table id="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total Price</td>
+                                <td id="total-price">0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                <section class="tablebutton">
+                    <button id="buy-now"> Buy Now</button>
+                    <button id="add-to-favourites">Add to Favourites</button>
+                    <button id="apply-favourites">Apply Favourites</button>
+                    <button id="clear-cart">Clear Cart</button>
+                </section>
+        </section>
+    </main>
+    <script src="./js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgb(0, 0, 0);
+}
+
+#chk1 {
+  display: none;
+}
+
+i {
+  color: #fff;
+  cursor: pointer;
+}
+
+header .logo {
+  flex: 1;
+  color: #fff;
+  margin-left: 50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.logo-image{
+  border-radius: 50%;
+}
+
+header .search-box {
+  flex: 1;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+  border-radius: 30px;
+  color: gray;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.search-box button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(0.9);
+  background: rgb(0, 0, 0);
+  color: #fff;
+}
+
+header ul {
+  flex: 2;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap; /* Wrap items if they don't fit in one line */
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+header ul li a:hover {
+  border-bottom: 2px solid cadetblue;
+}
+
+header .menu {
+  font-size: 2.5em;
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #404344;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #000;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 1000px) {
+  .search-box button {
+      position: absolute;
+  }
+  
+  header ul {
+      position: fixed;
+      top: 100px;
+      right: -100%;
+      background: rgba(0, 0, 0, 0.5);
+      height: calc(100vh - 100px);
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
+      transition: right 0.5s linear;
+  }
+  
+  header .menu {
+      display: block;
+      width: 100px;
+      text-align: center;
+  }
+  
+  #chk1:checked ~ ul {
+      right: 0;
+  }
+}
+
+
+.container {
+
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+.container header {
+  font-size: 1.5rem;
+  color: #fffafa;
+  font-weight: 500;
+  text-align: center;
+ 
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #000000;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  color: rgb(0, 0, 0);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(0, 0, 0);
+}
+.form button:hover {
+  border: 2px solid #000;
+  color: #000;
+  background: rgb(255, 255, 255);
+}
+
+.scheme_details{
+  box-sizing: border-box;
+  border: 2px solid #000;
+  width: 700px;
+  margin-left: 390px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.scheme_details li{
+  margin-left: 30px;
+}
+.scheme_details ul{
+  margin-left: 30px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.container ol li {
+  list-style: circle;
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+@media(max-width:1000px){
+  .search button{
+    position: absolute;
+  }
+  header ul{
+    position: fixed;
+    top: 100px;
+    right: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: calc(100vh - 100px);
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s linear;
+  }
+}
